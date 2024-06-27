@@ -1,5 +1,15 @@
 import random
-
+from hangman_words import word_list
+logo = ''' 
+ _                                             
+| |                                            
+| |__   __ _ _ __   __ _ _ __ ___   __ _ _ __  
+| '_ \ / _` | '_ \ / _` | '_ ` _ \ / _` | '_ \ 
+| | | | (_| | | | | (_| | | | | | | (_| | | | |
+|_| |_|\__,_|_| |_|\__, |_| |_| |_|\__,_|_| |_|
+                    __/ |                      
+                   |___/    '''
+print(logo)
 stages = ['''
   +---+
   |   |
@@ -56,7 +66,6 @@ stages = ['''
       |
 =========
 ''']
-word_list = ["aardvark", "baboon", "camel"]
 chosen_word = random.choice(word_list)
 display = ["_"] * len(chosen_word)
 lives = 6
